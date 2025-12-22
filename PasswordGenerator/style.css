@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    background: linear-gradient(140deg , rgb(112, 112, 247) , rgb(206, 148, 78));
+    width: 100vw;
+    user-select: none;
+    height: 100vh;
+}
+
+.container{
+    width: 40vw;
+    height: 40vh;
+    margin: 210px 180px;
+    padding: 20px ;
+}
+.gen{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.gen input{
+    border: 0;
+    outline: 0;
+    max-width: 450px;
+    height: 40px;
+    margin: 35px 0 ;
+    padding: 10px;
+}
+.gen button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 230px;
+    height: 58px;
+    width: 40vw;
+    outline: 0;
+    border: 0;
+    background: rgb(57, 188, 88);
+    color: #fff;
+    transition: transform 0.3s ease-in-out 0.05s , color 0.3s ease-in-out 0.7s;
+}
+.gen button:hover{
+    transform: scale(1.1);
+    color: blue;
+}
+
+#first{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 50px;
+    background-image: url(images/nature.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate{
+    from{
+        background-position: 500px;
+    }
+    to{
+        background-position-x:-500px ;
+    }
+}
+#second{
+    color: rgb(57, 188, 88);
+    font-size: 50px;
+    font-weight: 60px;
+    
+}
+button img{
+    height: 28px;
+    width: 28px;
+}
+
+.copy{
+    width: 23px;
+    position: absolute;
+    top: 44px;
+    z-index: 1;
+    right: 192px;
+    cursor: pointer;
+}
+
+/*  this to add images in text */
+/* 
+h1{
+    background-image: url(images/nature.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: animate 20s linear infinite;
+} */
