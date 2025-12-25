@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <button class="btn" onclick="changeColor('red')">Red</button>
+        <button class="btn" onclick="changeColor('Purple')">Purple</button>
+        <button class="btn" onclick="changeColor('Green')">Green</button>
+        <button class="btn" onclick="changeColor('Yellow')">Yellow</button>
+        <button class="btn" onclick="changeColor('Pink')">Pink</button>
+        <button class="btn" onclick="changeColor('Blue')">Blue</button>
+        <button class="btn" onclick="changeColor('Black')">Black</button>
+        <button class="btn" onclick="changeColor('Orange')">Orange</button>
+    </div>
+    <script>
+        function changeColor(color){
+            document.body.style.backgroundColor=color;
+        }
+    </script>
+</body>
+</html>
